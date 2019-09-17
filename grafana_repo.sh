@@ -3,7 +3,7 @@
 set -ex
 
 # Create Grafan Repository
-cat  >/etc/yum.repos.d/grafana.repo <<EOL
+cat >/etc/yum.repos.d/grafana.repo <<EOL
 [grafana]
 name=grafana
 baseurl=https://packages.grafana.com/oss/rpm

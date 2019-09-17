@@ -6,12 +6,14 @@ set -ex
 rpm -Uvh https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
 
 # Enable to use MySQL 5.7
+cat >/etc/yum.repos.d/mysql-community.repo <<EOL
 [mysql57-community]
 name=MySQL 5.7 Community Server
 baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/6/$basearch/
-enabled=0
+enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+EOL
 
 # Enable to use MySQL 5.6
 [mysql56-community]
