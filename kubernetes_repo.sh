@@ -8,7 +8,6 @@ cat <<EOF > /etc/yum.repos.d/kubernetes.repo
 name=Kubernetes
 ###Can use either one based on preference###
 baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
-#baseurl=http://yum.kubernetes.io/repos/kubernetes-el7-x86_64
 enabled=1
 gpgcheck=1
 repo_gpgcheck=1
